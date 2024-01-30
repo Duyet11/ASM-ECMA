@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": "0f9a",
+      "name": "san pham neww",
+      "image": "https://picsum.photos/300/300",
+      "price": "219997",
+      "description": "mô tả sản phẩm"
+    },
+    {
+      "id": "2905",
+      "name": "iphone 15 ",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.e9lZtx7IARHGLa1DUY22mwHaHa&pid=Api&P=0&h=220",
+      "price": "12345",
+      "description": "sản phẩm sịn"
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "label": "Thống kê",
+      "path": "/admin",
+      "icon": "<svg className=\"bi\"><use xlinkHref=\"#house-fill\" /></svg>"
+    },
+    {
+      "id": 2,
+      "label": "Sản phẩm",
+      "path": "/admin/products",
+      "icon": "<svg className=\"bi\"><use xlinkHref=\"#house-fill\" /></svg>"
+    }
+  ]
+}
