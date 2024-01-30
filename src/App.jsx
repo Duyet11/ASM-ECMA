@@ -8,6 +8,8 @@ import { addProducts, getProducts, removeProductById, updateProducts } from "./a
 import { ToastContainer, toast } from 'react-toastify';
 import ProductAddPage from './pages/admin/product-add'
 import ProductEditPage from './pages/admin/product-edit'
+import LoginPage from './pages/admin/login'
+import RegisterPage from './pages/admin/register'
 
 function App() {
   const [products,setProducts] = useState([]);
@@ -63,6 +65,8 @@ function App() {
                 <Route path="admin/products" element={<ProductPage products={products} onRemove={onHandleRemove}/>} />
                 <Route path="admin/products/add" element={<ProductAddPage onAdd={onHandleAdd}/>} />
                 <Route path="admin/products/:id/edit" element={<ProductEditPage onUpdate={onHandleUpdate}/>} />
+                <Route path="admin/login" element={<LoginPage/>} />
+                <Route path="admin/register" element={<RegisterPage/>} />
               </Routes>
               
             </main>
