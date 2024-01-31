@@ -15,22 +15,22 @@
       "id": "wwDWDac"
     },
     {
-      "description": "v",
-      "price": 33,
-      "image": "https://th.bing.com/th/id/OIP.oAIxA0fr7zzrxI_y2YP_eAHaHa?rs=1&pid=ImgDetMain",
-      "name": "qua dep",
-      "id": "VjRincO"
+      "id": "2dee",
+      "description": "bò",
+      "price": 112312321,
+      "image": "https://tse4.mm.bing.net/th?id=OIP.JugBMBp7ummagJNe8rvC0AHaD4&pid=Api&P=0&h=220/300/300",
+      "name": "m1"
     }
   ],
   "menus": [
     {
-      "id": 1,
+      "id": "1",
       "label": "Thống kê",
       "path": "/admin",
       "icon": "<svg className=\"bi\"><use xlinkHref=\"#house-fill\" /></svg>"
     },
     {
-      "id": 2,
+      "id": "2",
       "label": "Sản phẩm",
       "path": "/admin/products",
       "icon": "<svg className=\"bi\"><use xlinkHref=\"#house-fill\" /></svg>"
@@ -38,29 +38,34 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "email": "duyetoke@gmail.com",
       "password": "123456"
     },
     {
-      "id": 2,
+      "id": "2",
       "email": "duyetoke2001@gmail.com",
       "password": "123456"
     },
     {
       "email": "toanbui219@gmail.com",
       "password": "123456",
-      "id": 3
+      "id": "3"
     },
     {
       "email": "nhom7@gmail.com",
       "password": "123456",
-      "id": 4
+      "id": "4"
     },
     {
       "email": "toanbui219@gmail.com",
       "password": "123456",
-      "id": 5
+      "id": "5"
+    },
+    {
+      "id": "2fbb",
+      "email": "admin1@gmail.com",
+      "password": "123456"
     }
   ]
 }
