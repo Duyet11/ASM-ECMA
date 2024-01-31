@@ -1,25 +1,77 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 const Header = () => {
+  let user = JSON.parse(localStorage.getItem("token"));
+  const navigate = useNavigate();
+  function Logout() {
+    localStorage.removeItem("token");
+    toast.success("Logout thành công!");
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
+  }
   return (
-    <header className="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-        <ul className="navbar-nav flex-row d-md-none">
-        <li className="nav-item text-nowrap">
-            <button className="nav-link px-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search">
-            <svg className="bi"><use xlinkHref="#search" /></svg>
+    <>
+      <>
+        <nav
+          className='navbar navbar-expand-lg navbar-light bg-light fixed-top '
+          style={{ marginBottom: "20px" }}>
+          <div className='container'>
+            <p className='' style={{ padding: "10px 0" }} href='#'>
+              Phạm Thế Duyệt
+            </p>
+            <button
+              className='navbar-toggler'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#navbarResponsive'
+              aria-controls='navbarResponsive'
+              aria-expanded='false'
+              aria-label='Toggle navigation'>
+              <span className='navbar-toggler-icon' />
             </button>
-        </li>
-        <li className="nav-item text-nowrap">
-            <button className="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <svg className="bi"><use xlinkHref="#list" /></svg>
-            </button>
-        </li>
-        </ul>
-        <div id="navbarSearch" className="navbar-search w-100 collapse">
-        <input className="form-control w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search" />
-        </div>
-  </header> 
-  )
-}
+            <div className='collapse navbar-collapse' id='navbarResponsive'>
+              <ul className='navbar-nav ms-auto'>
+                <li className='nav-item active'>
+                  <a className='nav-link' href='#'>
+                    Home
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>
+                    About
+                  </a>
+                </li>
 
-export default Header
+                {user && Object.keys(user).length !== 0 ? (
+                  <li className='nav-item'>
+                    <p className='nav-link' onClick={Logout}>
+                      Logout
+                    </p>
+                  </li>
+                ) : (
+                  <>
+                    <li className='nav-item'>
+                      <Link className='nav-link' to='/login'>
+                        Login
+                      </Link>
+                    </li>
+                    <li className='nav-item'>
+                      <Link className='nav-link' to='/register'>
+                        Register
+                      </Link>
+                    </li>
+                  </>
+                )}
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </>
+    </>
+  );
+};
+
+export default Header;

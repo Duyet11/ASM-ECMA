@@ -8,11 +8,18 @@
       "description": "mô tả sản phẩm"
     },
     {
-      "id": "2905",
-      "name": "iphone 15 ",
-      "image": "https://tse3.mm.bing.net/th?id=OIP.e9lZtx7IARHGLa1DUY22mwHaHa&pid=Api&P=0&h=220",
-      "price": "12345",
-      "description": "sản phẩm sịn"
+      "name": "qua dep",
+      "image": "https://th.bing.com/th/id/OIP.oAIxA0fr7zzrxI_y2YP_eAHaHa?rs=1&pid=ImgDetMain",
+      "price": "1000000",
+      "description": "fdffs",
+      "id": "wwDWDac"
+    },
+    {
+      "description": "v",
+      "price": 33,
+      "image": "https://th.bing.com/th/id/OIP.oAIxA0fr7zzrxI_y2YP_eAHaHa?rs=1&pid=ImgDetMain",
+      "name": "qua dep",
+      "id": "VjRincO"
     }
   ],
   "menus": [
@@ -27,6 +34,33 @@
       "label": "Sản phẩm",
       "path": "/admin/products",
       "icon": "<svg className=\"bi\"><use xlinkHref=\"#house-fill\" /></svg>"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "duyetoke@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "email": "duyetoke2001@gmail.com",
+      "password": "123456"
+    },
+    {
+      "email": "toanbui219@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "email": "nhom7@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "email": "toanbui219@gmail.com",
+      "password": "123456",
+      "id": 5
     }
   ]
 }
